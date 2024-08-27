@@ -91,10 +91,12 @@ const sidebars = {
             'dev-docs/configurations/functions',
             'dev-docs/configurations/cron',
             'dev-docs/configurations/environment',
-            'dev-docs/configurations/guides/public-assets',
             'dev-docs/configurations/sso',
-            'dev-docs/configurations/guides/rbac',
             'dev-docs/configurations/features',
+            'dev-docs/configurations/guides/rbac',
+            'dev-docs/configurations/guides/public-assets',
+            'dev-docs/configurations/guides/access-cast-environment-variables',
+            'dev-docs/configurations/guides/access-configuration-values',
           ],
         },
         {
@@ -114,47 +116,6 @@ const sidebars = {
               type: 'doc',
               label: '☁️ Strapi Cloud',
               id: 'cloud/getting-started/deployment',
-            },
-            {
-              type: 'category',
-              label: 'Other Hosting Guides',
-              link: {
-                type: 'doc',
-                id: 'dev-docs/deployment/hosting-guides',
-              },
-              collapsed: false,
-              items: [
-                {
-                  type: 'doc',
-                  label: 'Introduction to hosting guides',
-                  id: 'dev-docs/deployment/hosting-guides',
-                },
-                'dev-docs/deployment/amazon-aws',
-                'dev-docs/deployment/azure',
-                'dev-docs/deployment/digitalocean-app-platform',
-                'dev-docs/deployment/digitalocean',
-                'dev-docs/deployment/heroku',
-              ],
-            },
-            {
-              type: 'category',
-              label: 'Optional Software Guides',
-              link: {
-                type: 'doc',
-                id: 'dev-docs/deployment/optional-software-guides',
-              },
-              collapsed: false,
-              items: [
-                {
-                  type: 'doc',
-                  label: 'Introduction to optional guides',
-                  id: 'dev-docs/deployment/optional-software-guides',
-                },
-                'dev-docs/deployment/caddy-proxy',
-                'dev-docs/deployment/haproxy-proxy',
-                'dev-docs/deployment/nginx-proxy',
-                'dev-docs/deployment/process-manager',
-              ],
             },
           ]
         }
@@ -196,6 +157,7 @@ const sidebars = {
             'dev-docs/api/rest/sort-pagination',
             'dev-docs/api/rest/relations',
             'dev-docs/api/rest/interactive-query-builder',
+            'dev-docs/api/rest/guides/intro',
           ]
         },
         {
@@ -294,11 +256,6 @@ const sidebars = {
               type: 'doc',
               label: 'Middlewares',
               id: 'dev-docs/api/document-service/middlewares'
-            },
-            {
-              type: 'doc',
-              label: 'Lifecycle hooks',
-              id: 'dev-docs/api/document-service/lifecycle-hooks'
             },
           ]
         },
@@ -417,7 +374,27 @@ const sidebars = {
             'dev-docs/backend-customization/webhooks',
           ]
         },
-        'dev-docs/admin-panel-customization',
+        {
+          type: 'category',
+          label: 'Admin panel customization',
+          link: {
+            type: 'doc',
+            id: 'dev-docs/admin-panel-customization',
+          },
+          items: [
+            {
+              type: 'doc',
+              id: 'dev-docs/admin-panel-customization',
+              label: 'Introduction to admin panel customization',
+            },
+            'dev-docs/admin-panel-customization/host-port-path',
+            'dev-docs/admin-panel-customization/options',
+            'dev-docs/admin-panel-customization/bundlers',
+            'dev-docs/admin-panel-customization/wysiwyg-editor',
+            'dev-docs/admin-panel-customization/extension',
+            'dev-docs/admin-panel-customization/deployment',
+          ]
+        },
       ]
     },
     { // Plugins
@@ -712,6 +689,7 @@ const sidebars = {
             'user-docs/settings/API-tokens',
             'user-docs/settings/internationalization',
             'user-docs/settings/media-library-settings',
+            'user-docs/settings/releases',
             {
               type: 'doc',
               label: 'Review Workflows',
@@ -1042,6 +1020,11 @@ const sidebars = {
           type: "doc",
           label: "How to populate creator fields",
           id: 'dev-docs/api/rest/guides/populate-creator-fields',
+        },
+        {
+          type: 'link',
+          label: 'Additional resources',
+          href: '/dev-docs/api/rest/guides/intro#additional-resources'
         },
       ],
     }
