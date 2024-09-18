@@ -66,4 +66,4 @@ Users should ensure that components and dynamic zones are explicitly populated u
 
 - example URL:
 
-  `/api/articles?populate[blocks][on][blocks.related-articles][populate][articles][populate][0]=image&populate[blocks][on][blocks.cta-command-line][populate]=*`
+  `/api/articles?populate[blocks][on][blocks.related-articles][populate][articles][populate][0]=image&populate[blocks][on][blocks.cta-command-line][populate]=true`
