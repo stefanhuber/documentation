@@ -140,7 +140,7 @@ const config = {
       announcementBar: {
         id: 'support_us',
         content:
-          "Hey! ️👋 Please update your bookmarks 🔖 Strapi 5 docs are now hosted <a href='https://docs.strapi.io'>docs.strapi.io</a> 🤓",
+          "Hey! ️👋 Please update your bookmarks 🔖 Strapi 5 docs are now hosted at <a href='https://docs.strapi.io'>docs.strapi.io</a> 🤓",
         backgroundColor: '#F3E5FA',
         textColor: '#091E42',
         isCloseable: false,
