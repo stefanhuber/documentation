@@ -26,6 +26,7 @@ const config = {
     mermaid: true,
   },
 
+  // ⚠️ Prevents the website from being indexed on search engines
   noIndex: true,
 
   themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
